@@ -15,8 +15,13 @@ const app = express();
 
 // Database connection
 sequelize.authenticate()
-  .then(() => logger.info('Database connected')) // Use the logger
-  .catch(err => logger.error('Database connection error:', err)); // Use the logger
+  .then(() => logger.info('Database connected')) 
+  .catch(err => logger.error('Database connection error:', err));
+
+// Sync database models
+sequelize.sync({ force: false }) // false means it won't drop existing tables
+  .then(() => logger.info('Database tables synced'))
+  .catch(err => logger.error('Database sync error:', err));
 
 // Internationalization setup
 i18n
@@ -26,7 +31,7 @@ i18n
     resources: {
       en: { translation: require('./locales/en.json') },
       es: { translation: require('./locales/es.json') },
-      fr: { translation: require('./locales/fr.json') }, // Add more languages
+      fr: { translation: require('./locales/fr.json') },
     }
   });
 
@@ -36,8 +41,8 @@ app.use(i18nMiddleware.handle(i18n));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Routes
-app.use('/api/events', authMiddleware, eventsRoutes); // Protect the events routes
+// Routes - removed authentication for events
+app.use('/api/events', eventsRoutes); // No auth middleware
 app.use('/api/auth', authRoutes);
 app.use('/api/users', authMiddleware, userRoutes); // Protect the users routes
 
@@ -46,5 +51,5 @@ app.use(errorMiddleware);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  logger.info(`Server running on port ${PORT}`); // Use the logger
+  logger.info(`Server running on port ${PORT}`);
 });

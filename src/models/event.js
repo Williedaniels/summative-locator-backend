@@ -1,47 +1,36 @@
-'use strict';
+// src/models/Event.js
+const { DataTypes } = require('sequelize');
 
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize) => {
   const Event = sequelize.define('Event', {
     id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+      type: DataTypes.INTEGER,
       primaryKey: true,
+      autoIncrement: true
     },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        notEmpty: true
+      }
     },
     description: {
       type: DataTypes.TEXT,
+      allowNull: true
+    },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false
     },
     location: {
-      type: DataTypes.GEOMETRY('POINT'),
-      allowNull: false,
-    },
-    startDateTime: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    category: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    maxParticipants: {
-      type: DataTypes.INTEGER,
-    },
-    userId: {
-      type: DataTypes.UUID,
-    },
+      allowNull: true
+    }
   }, {
-    tableName: 'Events', // Specify the table name
+    tableName: 'events', // Important: lowercase 'events'
+    timestamps: true // This enables createdAt and updatedAt
   });
-
-  Event.associate = (models) => {
-    Event.belongsTo(models.User, {
-      foreignKey: 'userId',
-      as: 'creator',
-    });
-  };
 
   return Event;
 };
