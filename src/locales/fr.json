@@ -1,0 +1,12 @@
+{
+    "welcome": "Bienvenue sur Event Locator",
+    "event": {
+      "created": "Événement créé avec succès",
+      "updated": "Événement mis à jour avec succès",
+      "deleted": "Événement supprimé avec succès"
+    },
+    "errors": {
+      "unauthorized": "Accès non autorisé",
+      "notFound": "Ressource non trouvée"
+    }
+  }
