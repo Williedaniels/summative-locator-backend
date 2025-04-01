@@ -2,6 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const { Event } = require('../models'); // Using your existing model structure
+const auth = require('../middlewares/auth'); 
+const EventController = require('../controllers/eventController');
 const logger = require('../services/logger');
 const { Op } = require('sequelize');
 
@@ -102,6 +104,10 @@ router.post('/', async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
+
+router.get('/search', EventController.searchEvents);
+router.get('/:id', EventController.getEventById);
+router.post('/', EventController.createEvent);
 
 /**
  * UPDATE an existing event

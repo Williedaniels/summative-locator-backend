@@ -45,6 +45,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/events', eventsRoutes); // No auth middleware
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes); // Protect the users routes
+app.use('/api/profile', userRoutes);
+app.use('/api/preferences', userRoutes);
+app.use('/api/location', userRoutes);
+
 
 // Error handling
 app.use(errorMiddleware);

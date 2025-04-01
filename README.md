@@ -62,8 +62,8 @@ npm test
 
 ## API Endpoints
 
-- `/api/users/register` - User Registration
-- `/api/users/login` - User Login
+- `/api/auth/register` - User Registration
+- `/api/auth/login` - User Login
 - `/api/events` - Event CRUD Operations
 - `/api/events/search` - Location-Based Event Search
 

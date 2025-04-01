@@ -3,41 +3,50 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('events', {
+    await queryInterface.createTable('Events', {
       id: {
         allowNull: false,
-        autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
       },
       title: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
       },
       description: {
         type: Sequelize.TEXT,
-        allowNull: true
-      },
-      date: {
-        type: Sequelize.DATE,
-        allowNull: false
       },
       location: {
+        type: Sequelize.GEOMETRY('POINT'),
+        allowNull: false,
+      },
+      startDateTime: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      category: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false,
+      },
+      maxParticipants: {
+        type: Sequelize.INTEGER,
+      },
+      userId: {
+        type: Sequelize.UUID,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('events');
-  }
+    await queryInterface.dropTable('Events');
+  },
 };
