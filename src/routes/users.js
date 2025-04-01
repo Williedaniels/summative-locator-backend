@@ -4,7 +4,7 @@ const { User } = require('../models'); // Import the User model
 
 router.get('/me', async (req, res) => {
   try {
-    const user = await User.findByPk(req.user.id, {
+    const user = await User.findById(req.user.id, {
       attributes: { exclude: ['password'] }, // Exclude the password
     });
 
