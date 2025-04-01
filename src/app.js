@@ -44,7 +44,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes - removed authentication for events
 app.use('/api/events', eventsRoutes); // No auth middleware
 app.use('/api/auth', authRoutes);
-app.use('/api/users', authMiddleware, userRoutes); // Protect the users routes
+app.use('/api/users', userRoutes); // Protect the users routes
 
 // Error handling
 app.use(errorMiddleware);
