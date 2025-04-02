@@ -47,10 +47,10 @@ Event Locator is a robust multi-user application that empowers users to discover
 
 Before you begin, ensure you have the following installed:
 
-* **Node.js (v16+):** https://nodejs.org/
-* **PostgreSQL:** https://www.postgresql.org/
-* **PostGIS Extension:** https://postgis.net/
-* **Redis:** https://redis.io/
+* **Node.js (v16+):** <https://nodejs.org/>
+* **PostgreSQL:** <https://www.postgresql.org/>
+* **PostGIS Extension:** <https://postgis.net/>
+* **Redis:** <https://redis.io/>
 * **npm (Node Package Manager):** Usually comes with Node.js.
 
 ## Installation and Setup
@@ -228,6 +228,9 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Willie B Daniles<w.daniels@alustudent.com>
+**Willie B Daniles**
+
+- [GitHub Profile](https://github.com/Williedaniels)
+- [Email](mailto:w.daniels@gmail.com)
 
 If you have any questions or suggestions, please feel free to contact me.
