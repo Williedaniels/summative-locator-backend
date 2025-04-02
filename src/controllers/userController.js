@@ -46,6 +46,19 @@ class UserController {
     }
   }
 
+  async getAllUsers(req, res) {
+    try {
+      const users = await User.findAll({
+        attributes: ['id', 'username', 'email', 'createdAt'], // Limit the fields returned
+      });
+
+      res.json(users);
+    } catch (error) {
+      logger.error('Error fetching users:', error); // Use the logger
+      res.status(500).json({ error: error.message });
+    }
+  }
+
   async login(req, res) {
     try {
       const { email, password } = req.body;
@@ -130,6 +143,34 @@ class UserController {
       res.json(user);
     } catch (error) {
       res.status(400).json({ error: error.message });
+    }
+  }
+
+  async searchProfiles(req, res) {
+    try {
+      const { username, email } = req.query;
+
+      // Build the where clause for filtering
+      const whereClause = {};
+
+      if (username) {
+        whereClause.username = { [Op.iLike]: `%${username}%` }; // Case-insensitive match for username
+      }
+
+      if (email) {
+        whereClause.email = { [Op.iLike]: `%${email}%` }; // Case-insensitive match for email
+      }
+
+      // Fetch users based on the filters
+      const users = await User.findAll({
+        where: whereClause,
+        attributes: ['id', 'username', 'email', 'createdAt'], // Limit the fields returned
+      });
+
+      res.json(users);
+    } catch (error) {
+      logger.error('Error searching user profiles:', error); // Use the logger
+      res.status(500).json({ error: error.message });
     }
   }
 

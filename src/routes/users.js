@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const auth = require('../middlewares/auth'); // Protect the route with auth middleware
 const { User } = require('../models'); // Import the User model
+const UserController = require('../controllers/userController'); 
 
 router.get('/me', async (req, res) => {
   try {
@@ -53,5 +54,11 @@ router.put('/preferences', auth, async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+router.get('/search', UserController.searchProfiles);
+
+router.get('/', UserController.getAllUsers);
+
+
 
 module.exports = router;

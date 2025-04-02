@@ -48,6 +48,8 @@ app.use('/api/users', userRoutes); // Protect the users routes
 app.use('/api/profile', userRoutes);
 app.use('/api/preferences', userRoutes);
 app.use('/api/location', userRoutes);
+app.use('/api/notifications', userRoutes);
+app.use('api/search', userRoutes);
 
 
 // Error handling

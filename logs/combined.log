@@ -265,3 +265,36 @@
 {"level":"info","message":"Database connected","timestamp":"2025-04-01T23:41:50.776Z"}
 {"level":"info","message":"Database tables synced","timestamp":"2025-04-01T23:41:50.776Z"}
 {"level":"info","message":"Event created with ID 4","timestamp":"2025-04-01T23:42:10.217Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-01T23:48:30.324Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-01T23:48:30.470Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-01T23:48:30.470Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:48:51.982Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:04.311Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-01T23:49:32.284Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-01T23:49:32.390Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-01T23:49:32.391Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:47.253Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:57.112Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:50:13.182Z"}
+{"level":"info","message":"Retrieved 4 events","timestamp":"2025-04-01T23:52:08.274Z"}
+{"level":"info","message":"Retrieved event with ID 4","timestamp":"2025-04-01T23:52:17.295Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-01T23:57:04.238Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-01T23:57:04.374Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-01T23:57:04.374Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:01:37.073Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:01:37.239Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:01:37.240Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:03:37.411Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:03:37.540Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:03:37.541Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:04:23.265Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:04:23.395Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:04:23.395Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:07:07.630Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:07:08.093Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:07:08.094Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:12:59.557Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:12:59.787Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:12:59.787Z"}
+{"level":"info","message":"Retrieved 4 events","timestamp":"2025-04-02T00:16:32.695Z"}
+{"level":"info","message":"Event 2 deleted successfully","timestamp":"2025-04-02T00:17:07.114Z"}

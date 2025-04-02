@@ -53,3 +53,8 @@
 {"level":"error","message":"Error creating event: notNull Violation: Event.startDateTime cannot be null,\nnotNull Violation: Event.category cannot be null","timestamp":"2025-04-01T23:04:50.514Z"}
 {"level":"error","message":"Error creating event: notNull Violation: Event.startDateTime cannot be null,\nnotNull Violation: Event.category cannot be null","timestamp":"2025-04-01T23:27:12.909Z"}
 {"level":"error","message":"Error fetching events: relation \"Events\" does not exist","timestamp":"2025-04-01T23:29:49.186Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:48:51.982Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:04.311Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:47.253Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:49:57.112Z"}
+{"level":"error","message":"Error fetching event search: invalid input syntax for type integer: \"search\"","timestamp":"2025-04-01T23:50:13.182Z"}
