@@ -298,3 +298,35 @@
 {"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:12:59.787Z"}
 {"level":"info","message":"Retrieved 4 events","timestamp":"2025-04-02T00:16:32.695Z"}
 {"level":"info","message":"Event 2 deleted successfully","timestamp":"2025-04-02T00:17:07.114Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:43:42.685Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:43:42.819Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:43:42.820Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:52:59.354Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:52:59.518Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:52:59.519Z"}
+{"body":"{\n    \"title\": “Birthday”,\n    \"description\": \"This is a Birthday party”,\n    \"location\": \"usa”,\n    \"date\": \"2025-08-3110:00:00Z\" ,\n    \"category\": “Social”,\n    \"maxParticipants\": 10\n}","expose":true,"level":"error","message":"Unhandled error: Unexpected token '“', ...\" \"title\": “Birthday”\"... is not valid JSON","stack":"SyntaxError: Unexpected token '“', ...\" \"title\": “Birthday”\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parse (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:238:16)\n    at done (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:507:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","status":400,"statusCode":400,"timestamp":"2025-04-02T00:58:40.436Z","type":"entity.parse.failed"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T00:58:51.621Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T00:58:52.097Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T00:58:52.099Z"}
+{"level":"info","message":"Retrieved 3 events","timestamp":"2025-04-02T00:59:53.292Z"}
+{"level":"info","message":"Event created with ID 5","timestamp":"2025-04-02T01:08:10.509Z"}
+{"level":"info","message":"Event created with ID 6","timestamp":"2025-04-02T01:08:31.434Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T01:12:38.315Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T01:12:38.473Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T01:12:38.474Z"}
+{"body":"{\n    \"title\": “Cook Event\",\n    \"description\": \"This is a test event\",\n    \"location\": \"spain\",\n    \"date\": \"2025-04-31T10:00:00Z\",\n    \"category\": \"food\",\n    \"maxParticipants\": 10\n}","expose":true,"level":"error","message":"Unhandled error: Unexpected token '“', ...\" \"title\": “Cook Even\"... is not valid JSON","stack":"SyntaxError: Unexpected token '“', ...\" \"title\": “Cook Even\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at parse (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:238:16)\n    at done (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/williedaniels/Summative-locator_backend/summative-locator-backend/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:507:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","status":400,"statusCode":400,"timestamp":"2025-04-02T01:18:29.445Z","type":"entity.parse.failed"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T01:18:35.239Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T01:18:35.406Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T01:18:35.407Z"}
+{"level":"info","message":"Event created with ID 7","timestamp":"2025-04-02T01:18:47.469Z"}
+{"level":"info","message":"Retrieved 6 events","timestamp":"2025-04-02T01:19:08.022Z"}
+{"level":"info","message":"Event 4 deleted successfully","timestamp":"2025-04-02T01:21:38.055Z"}
+{"level":"info","message":"Retrieved event with ID 1","timestamp":"2025-04-02T01:21:59.901Z"}
+{"level":"info","message":"Retrieved event with ID 7","timestamp":"2025-04-02T01:22:05.897Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-02T01:34:24.411Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-04-02T01:34:24.563Z"}
+{"level":"info","message":"Database tables synced","timestamp":"2025-04-02T01:34:24.563Z"}
+{"level":"info","message":"Event created with ID 8","timestamp":"2025-04-02T01:39:57.673Z"}
+{"level":"info","message":"Retrieved 6 events","timestamp":"2025-04-02T01:40:06.393Z"}
+{"level":"info","message":"Retrieved event with ID 7","timestamp":"2025-04-02T01:40:14.789Z"}
+{"level":"info","message":"Event 7 deleted successfully","timestamp":"2025-04-02T01:40:59.794Z"}

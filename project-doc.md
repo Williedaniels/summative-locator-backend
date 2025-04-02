@@ -210,19 +210,13 @@ The application exposes the following API endpoints:
   * `POST /register`: Register a new user.
   * `POST /login`: Log in an existing user.
 * **User Profile:**
-  * `GET /profile`: Get the current user's profile.
-  * `PUT /profile`: Update the current user's profile.
-  * `PUT /location`: Update the current user's location.
-  * `PUT /preferences`: Update the current user's preferences.
+  * `GET /users`: Get the current user's profile.
 * **Events:**
   * `POST /events`: Create a new event.
-  * `GET /events/search`: Search for events based on location and radius.
   * `GET /events/:id`: Get an event by its ID.
-  * `PUT /events/:id`: Update an event.
   * `DELETE /events/:id`: Delete an event.
 * **Notifications:**
   * `GET /notifications`: Get the current user's notifications.
-  * `PUT /notifications/:id/read`: Mark a notification as read.
 
 ## Contributing
 
